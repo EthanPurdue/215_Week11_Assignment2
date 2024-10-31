@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cocktails</title>
+        <style>
+            html {
+                background-color: #F00F24;
+            }
+
+            h1 {
+                width: 100%;
+                background-color: #DDBA00;
+                color: #F00F24;
+                text-align: center;
+                font-size: xx-large;
+                box-shadow: 5px 5px 5px #2E8B0C
+            }
+
+            h2 {
+                border-radius: 50%;
+                float: left;
+                margin-top: 3%;
+                margin-left: 30%;
+                width: 40%;
+                background-color: #2E8B0C;
+                color: black;
+                text-align: center;
+                font-size: large;
+            }
+            
+            .wrapper {
+                border-radius: 15px;
+                flex: 100%, 100%, 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 40%;
+                border: 5px solid #2E8B0C;
+                margin-left: 5%;
+                margin-top: 8%;
+            }
+
+            .informationBox {
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                position: fixed;         
+                top: 25%;               
+                right: 25px;      
+                flex: 0, 100%, 100px;
+                height: 300px;
+                width: 25%;
+                background-color: #DDBA00;
+                box-sizing: border-box;
+                padding-top: 15px;
+                padding-bottom: 20px;
+                font-size: medium;
+                border: 5px solid #2E8B0C;
+                margin-right: 40px;
+            }
+
+            .drinkBox {
+                height: 600px;
+                width:100%;
+                background-color: #DDBA00;
+                margin: 2px;
+                color: black;
+                margin-bottom: 5px;
+                font-size: xx-large;
+                box-sizing: border-box;
+                padding-top: 3px;
+                padding-bottom: 7px;
+                font-size: medium;
+            }
+            
+            .cocktailPicture {
+                width: 80%;
+                height: 80%;
+                margin-left: 8%;
+                border: 10px dotted #2E8B0C;
+                border-radius: 120%;
+            } 
+            .details {
+                margin-right: 2px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                font-size: large;
+                padding-left: 25%;
+                padding-right: 20%;
+                font-weight: bold;
+                width: 50%;
+                text-align:center;
+            }
+
+            .drinkName {
+
+                font-size: large;
+                padding-left: 25%;
+                padding-right: 20%;
+                font-weight: bold;
+                width: 50%;
+                text-align:center;
+            }
+
+            .informationBox .details {
+                padding-top: 15%;
+                padding-left: 0%;
+                font-size: x-large;
+                text-align: center; 
+                width: 100%;   
+            }
+
+            .informationBox h3 {
+                font-size: xx-large;
+                text-align: center;
+                width: 100%;
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .navbar {
+                display: flex; 
+                background-color: #DDBA00; 
+                box-shadow: 4px 4px 4px #2E8B0C;
+                justify-content: space-between; 
+            }
+
+
+        </style>
+        
+        <script src="./lib/jquery-3.7.1.js"></script>
+        <script src="cocktail_info.js"></script>
+        <script src="cocktails.js"></script>
+  
+    </head>
+    <body>
+        <h1>Christmas Cocktails List</h1>
+        
+        <!--NAV BAR DOES NOT DO ANYTHING JUST FOR SHOW-->
+        
+        <div class="navbar">
+            <a href="index.html" style = "text-decoration:none">Home</a>
+            <a href="index.html" style = "text-decoration:none">Mission Statement</a>
+            <a href="index.html" style = "text-decoration:none">Support</a>
+        </div>
+
+        <h2>Hover to see all ingredients -- Click to see calorie count</h2>
+        
+        <div class = "wrapper"></div>
+        
+        <div class = "informationBox">
+            <h3>Information</h3>
+            <!--I can create another instance of the "details" div since I already have it styled-->
+            <p class = "details"></p>
+        </div>
+    </body>
+</html>
